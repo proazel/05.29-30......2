@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    padding:0;
+    user-select: none;
+}
+div{
+    display: block;
+}
+ul,li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    box-sizing: inherit;
+}
+
+/* 크기 조절 */
+#space{
+    width: 100%;
+}
+
+/* 상세 내용 */
+#welcome_text{
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    background: #fff;
+}
+#welcome_text > h3 > span{
+    color: #f7b10a;
+}
+
+#long_button{
+    width: 400px;
+    margin: 0 auto;
+}
+#long_button > #button_link{
+    display: inline-block;
+    width: 398px;
+    height: 48px;
+    line-height: 45px;
+    text-align: center;
+    border: 1px solid #000;
+    color: #f7b10a;
+    background: rgba(0,0,0,.4);
+    cursor: pointer;
+}
+#long_button > #button_link:hover{
+    color: #fff;
+    background: #c77e19;
+    transition: 0.5s;
+    opacity: 0.8;
+}
+#long_button > #button_link > #button_inner{
+    width: 395px;
+    height: 45px;
+    border: 1px solid #c77e19;
+}

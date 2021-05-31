@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding:0;
+    user-select: none;
+}
+div{
+    display: block;
+}
+ul,li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    box-sizing: inherit;
+}
+
+/* 상세 내용 */
+#button{
+    float: left;
+}
+#button > #button_link{
+    display: inline-block;
+    width: 198px;
+    height: 48px;
+    line-height: 45px;
+    text-align: center;
+    border: 1px solid #000;
+    color: #f7b10a;
+    background: rgba(159,22,0,.6);
+}
+#button > #button_link:hover{
+    color: #fff;
+    background: rgba(233, 31, 0, 0.774);
+    transition: 0.5s;
+    opacity: 0.8;
+}
+#button > #button_link > #button_inner{
+    width: 195px;
+    height: 45px;
+    border: 1px solid #ea3012;
+}

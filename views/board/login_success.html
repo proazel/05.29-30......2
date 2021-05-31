@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login_success.css">
+    <title>login_success</title>
+</head>
+<body style="background: #211510;">
+    {% if isLogin %}
+    <div id="userinfo">
+        <h3><span>{{userid}}</span>님 로그인 중입니다.</h3>
+    </div>
+
+    <div id="button">
+        <a id="button_link" class="logout" href="/board/logout">
+            <div id="button_inner">
+                <h2>로그아웃</h2>
+            </div>
+        </a>
+    </div>
+
+    <div id="button">
+        <a id="button_link" href="/board/info_delete">
+            <div id="button_inner">
+                <h2>회원탈퇴</h2>
+            </div>
+        </a>
+    </div>
+    {% endif %}
+</body>
+</html>

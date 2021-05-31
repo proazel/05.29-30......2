@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding:0;
+    user-select: none;
+}
+div{
+    display: block;
+}
+ul,li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    box-sizing: inherit;
+}
+
+/* 크기 조절 */
+#space{
+    width: 100%;
+}
+
+/* 상세 내용 */
+#join_form{
+    width: 400px;
+    margin: 0 auto;
+}
+
+#input_text{
+    width: 358px;
+    height: 18px;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid rgb(218, 218, 218);
+    outline: none;
+}
+#check_msg{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 410px;
+    font-size: 15px;
+    letter-spacing: -1px;
+}
+.error_msg{
+    position: absolute;
+    width: 400px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    text-align: center;
+    color: red;
+}
+
+#long_button > #button_link{
+    display: inline-block;
+    width: 398px;
+    height: 48px;
+    line-height: 45px;
+    text-align: center;
+    border: 1px solid #000;
+    color: #f7b10a;
+    background: rgba(0,0,0,.4);
+    cursor: pointer;
+}
+#long_button > #button_link:hover{
+    color: #fff;
+    background: #c77e19;
+    transition: 0.5s;
+    opacity: 0.8;
+}
+#long_button > #button_link > #button_inner{
+    width: 395px;
+    height: 45px;
+    border: 1px solid #c77e19;
+}

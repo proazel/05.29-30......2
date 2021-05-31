@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <script src="/js/login.js"></script>
+    <title>login</title>
+</head>
+<body style="background: #211510;">
+    <div id="space" style="height: 100px;"></div>
+
+    <form id="login_form" action="/board/login_check" method="POST">
+        <input id="input_text" class="userid" name="userid" type="text" placeholder="ID">
+        <input id="input_text" class="userpw" name="userpw" type="password" placeholder="PASSWORD">
+
+        <div id="space" style="height: 100px;"></div>
+
+        <div id="long_button">
+            <a id="button_link" class="login_submit">
+                <div id="button_inner">
+                    <h2>로그인하기</h2>
+                </div>
+            </a>
+        </div>
+        <div id="long_button">
+            <a id="button_link" href="/board/join">
+                <div id="button_inner">
+                    <h2>회원가입</h2>
+                </div>
+            </a>
+        </div>
+        <div id="long_button">
+            <a id="button_link" href="/">
+                <div id="button_inner">
+                    <h2>메인으로</h2>
+                </div>
+            </a>
+        </div>
+    </form>
+    
+    {% if flag == '0' %}
+    <script type="text/javascript">
+        alert('아이디와 패스워드를 확인해주세요.')
+    </script>
+    {% endif %}
+</body>
+</html>
